@@ -13,7 +13,7 @@
             #lowCount = 0
             #count = 0
             
-
+            // 删除队头
             removeFront(){
                if(this.isEmpty()){
                    return undefined
@@ -24,11 +24,13 @@
                return res
             }
 
+            // 添加队尾
             addBack(data){
                this.#items[this.#count] = data
                this.#count++
             }
 
+            // 添加队头
             addFront(data){
                 // 1.如果为空
                 if(this.isEmpty()){
@@ -51,6 +53,7 @@
                 }
             }
 
+            // 删除队尾
             removeBack(){
                 if(this.isEmpty()){
                     return 
@@ -62,10 +65,12 @@
                 return res
             }
 
+            // 拿到队头
             peekFront(){
                 return this.#items[this.#lowCount]
             }
 
+            // 拿到队尾
             peekBack(){
                 if(this.isEmpty()){
                     return 

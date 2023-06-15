@@ -33,9 +33,10 @@
                 }else{
                     let current = this.head
 
+                    // 循环遍历node,找到next为null的node
                     while(current.next!==null){
                         current = current.next
-                    }
+                    } 
                     current.next = node
 
                     // console.log()
