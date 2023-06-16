@@ -29,3 +29,27 @@
     </script>
 </body>
 </html>
+<script>
+    function insertSort1(arr){
+        let temp
+        for(let i = 1; i<arr.length;i++){
+            temp = arr[i]
+            // for(let j = i; j > 0;j--){
+            //     if (arr[j-1] > temp) {
+            //         arr[j] = arr[j-1] // 前面的一直往后面覆盖
+
+            //     } else {
+            //         arr[j] = temp
+            //         return // 要跳出循环
+            //     }
+            // }
+
+            let j = i
+            while(j > 0 && arr[j-1] > temp){
+                arr[j] = arr[j-1]
+                j--
+            }
+            arr[j] = temp
+        }
+    }
+</script>
